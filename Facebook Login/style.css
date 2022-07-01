@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(236, 231, 231);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body, input, button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    padding-top: 130px;
+    padding-bottom: 150px;
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.left{
+    margin-bottom: 50px;
+}
+
+.logo{
+    display: block;
+    max-width: 100%;
+    height: 100px;
+    margin: -30px;
+    padding-bottom: 22px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1c1e21;
+    max-width: 500px;
+}
+
+form{
+    padding: 15px 15px 24px 15px;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form a, input, button{
+    display: block;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    outline: none;
+}
+
+input:focus{
+    border-color: #1877f2;
+    box-shadow: 0 0 0 3px #fff;
+    caret-color: #1877f2;
+}
+
+input[placeholder]{
+    font-weight: 100;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: #a3a5a8;
+    opacity: 0.5;
+}
+
+form a{
+    font-size: 15px;
+    color: #1877f2;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(201, 199, 199);
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+.entrar, .criar-conta{
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(0.08, 0.55, 0.55, 1);
+}
+
+.entrar{
+    font-size: 20px;
+    background-color: #1877f2;
+    width: 100%;
+}
+
+.criar-conta{
+    font-size: 18px;
+    background-color: rgb(16, 196, 16);
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.criar-conta:hover{
+    background-color: green;
+}
+
+p, p > a{
+    color: #1c1e21;
+    font-size: 15px;
+    margin: 28px 0 0 0;
+}
+
+p > a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #fff;
+    font-size: 10px;
+    color: #737373;
+    margin-left: -50px;
+    margin-right: -50px;
+    text-align: center;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+        margin: -25px auto;
+    }
+
+    .left{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
